@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PT Serif", serif; /* Set default font to PT Serif */
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding: 20px 50px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.search-signin {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between elements */
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #333; /* Bottom border for search input */
+    padding-bottom: 5px; /* Space below the input */
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-family: "PT Serif", serif; /* Consistent font */
+    width: 200px; /* Adjust width of input field */
+}
+
+.search-box input::placeholder {
+    color: #333; /* Placeholder color */
+    background-color: transparent;
+}
+
+.search-signin span {
+    color: #333;
+}
+
+.signin-link {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "PT Serif", serif;
+    color: #333;
+    font-weight: bold;
+}
+
+.hero {
+    background-color: #f8efe4;
+    padding: 50px;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.text-content {
+    max-width: 40%;
+}
+
+.text-content h2 {
+    font-size: 3em;
+    font-family: "PT Serif", serif; /* Make sure it's PT Serif */
+    font-weight: 700; /* Bold the h2 */
+}
+
+.text-content p {
+    margin: 20px 0;
+    font-size: 1.2em;
+    font-family: "PT Serif", serif;
+    font-weight: 400; /* Regular for paragraphs */
+}
+
+.text-content button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #f8efe4;
+    border: none;
+}
+
+.text-content button:hover {
+    background-color: #555; /* Darker hover effect */
+    color: #fff;
+}
+
+.book-slider {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.book-slider .book {
+    text-align: center;
+    position: relative;
+}
+
+.book-slider .book img {
+    width: 180px;
+    height: 300px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    display: block;
+    margin: 0 auto;
+}
+
+.book-slider .book p {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+    font-family: "PT Serif", serif; /* Regular for book titles */
+    font-weight: 400;
+}
+
+.book-slider .framed img {
+    border-radius: 100px 100px 0 0;
+}
+
+/* Middle book (reverse-rounded, bottom-rounded) */
+.book-slider .framed.reverse img {
+    border-radius: 0 0 100px 100px;
+}
+
+.book-slider .book.reverse p {
+    position: static;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+    font-family: "PT Serif", serif;
+}
+
+.bestsellers {
+    background-color: #f4f4f4;
+    padding: 50px;
+}
+
+.bestsellers-header {
+    display: flex;
+    justify-content: center; /* Center the "Bestsellers" heading */
+    position: relative; /* Allows for absolute positioning of buttons */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.bestsellers h2 {
+    margin: 0;
+    font-size: 2em;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    text-align: center; /* Center the heading */
+}
+
+.sort-filter {
+    position: absolute; /* Position the buttons to the right */
+    right: 0; /* Align the buttons to the right side */
+    display: flex;
+    gap: 15px; /* Space between the buttons */
+}
+
+.sort-filter button {
+    padding: 10px 20px; /* Same padding as "Explore Now" button */
+    background-color: #333;
+    color: #f8efe4;
+    border: none;
+}
+
+.sort-filter button:hover {
+    background-color: #555; /* Darker background on hover */
+    color: #fff; /* White text on hover */
+}
+
+.book-list {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-top: 30px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent items from wrapping */
+    padding-bottom: 10px; /* Space below items */
+}
+
+.book-item {
+    display: inline-block; /* Ensure inline layout for scrolling */
+    text-align: center;
+}
+
+.book-item img {
+    width: 150px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.book-item button {
+    padding: 5px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.book-item button:hover {
+    background-color: #555; /* Darker background on hover */
+}

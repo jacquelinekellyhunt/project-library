@@ -208,6 +208,7 @@ header {
   overflow-x: auto; /* Enable horizontal scrolling */
   white-space: nowrap; /* Prevent items from wrapping */
   padding-bottom: 10px; /* Space below items */
+  flex-wrap: wrap; /* Allows items to wrap to the next line if necessary */
 }
 
 .book-item {
@@ -257,4 +258,62 @@ header {
   width: 100%;
   padding: 10px;
   border: none;
+}
+#sort-dropdown {
+  position: absolute;
+  top: 100%; /* Ensures the dropdown appears right below the button */
+  left: 0; /* Aligns the dropdown with the left side of the button */
+  background-color: #fff; /* Sets a white background for the dropdown */
+
+  border: 1px solid #ccc; /* Adds a light border for visibility */
+  display: none; /* Hidden by default, shown when the button is clicked */
+  width: 100px; /* Ensures the dropdown has a fixed width */
+  padding: 10px; /* Adds padding inside the dropdown for spacing */
+}
+#sort-dropdown option {
+  padding: 8px; /* Adds padding around each option for better readability and spacing */
+}
+
+/* Sort button */
+.sort-btn,
+.filter-btn {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #f8efe4;
+  border: none;
+  width: 100px; /* Same width for both the button and the dropdown */
+  text-align: center;
+  cursor: pointer;
+}
+
+.sort-btn:hover,
+.filter-btn:hover {
+  background-color: #555; /* Darker background on hover */
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  display: none; /* Initially hidden */
+  position: absolute;
+  top: 100%; /* Position it below the button */
+  left: 0; /* Align with the left of the button */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  width: 200px; /* Same width as the button */
+  z-index: 10; /* Ensure it's on top of other elements */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Add some shadow for a floating effect */
+}
+
+.dropdown-item {
+  padding: 8px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
 }

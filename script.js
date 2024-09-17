@@ -183,6 +183,7 @@ const books = [
 
 //---------------------------------------------------------------------------------
 // Function to display books in the HTML
+// Function to display books in the HTML
 function displayBooks(books) {
   const bookList = document.getElementById("book-list");
   bookList.innerHTML = ""; // Clear existing content
@@ -232,7 +233,7 @@ function toggleDropdown() {
   }
 }
 
-// Add event listener to the Sort button after the DOM is fully loaded
+// Set up event listeners
 document.addEventListener("DOMContentLoaded", function () {
   const sortButton = document.getElementById("sort-button");
   const sortDropdown = document.getElementById("sort-dropdown");
@@ -240,10 +241,11 @@ document.addEventListener("DOMContentLoaded", function () {
   // Show/hide the dropdown on button click
   sortButton.addEventListener("click", toggleDropdown);
 
-  // Listen for change in the dropdown selection and sort books
+  // Listen for changes in the dropdown
   sortDropdown.addEventListener("change", function () {
     const selectedOption = sortDropdown.value;
-    sortBooks(selectedOption); // Sort and display books based on selection
+    sortBooks(selectedOption); // Sort and display books
+    sortDropdown.style.display = "none"; // Hide the dropdown after selection
   });
 
   // Display the initial unsorted list of books

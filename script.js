@@ -294,7 +294,6 @@ const books = [
 
 //---------------------------------------------------------------------------------
 // Function to display books in the HTML
-// Function to display books in the HTML
 function displayBooks(books) {
   const bookList = document.getElementById("book-list");
   bookList.innerHTML = ""; // Clear existing content
@@ -362,3 +361,22 @@ document.addEventListener("DOMContentLoaded", function () {
   // Display the initial unsorted list of books
   displayBooks(books);
 });
+
+//Fanny------------------------------------------------------------------------- 
+// Function for the genre filter
+const filterByGenre = (bookList, genre) => {
+  return bookList.filter(book => book.genre === genre);
+};
+
+// Getting the genre button and dropdown from HTML
+const genreButton = document.getElementById('genre-button');
+const genreDropdown = document.getElementById('filter-dropdown'); // Ensure this ID matches your HTML
+
+// Function to toggle the visibility of the dropdown
+
+// Event listener for the "Genre" button to toggle dropdown
+
+
+//------------------------------
+
+

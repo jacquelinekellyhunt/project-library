@@ -1,151 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>On.Book Library</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="navbar">
-        <div class="logo">
-          <h1>On.Book</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>On.Book Library</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <h1>On.Book</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Books</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">Wishlist</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+      <div class="search-signin">
+        <div class="search-box">
+          <input type="text" placeholder="Search book..." />
         </div>
-        <nav>
-          <ul>
-            <li><a href="#">Books</a></li>
-            <li><a href="#">Categories</a></li>
-            <li><a href="#">Wishlist</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">About Us</a></li>
-          </ul>
-        </nav>
-        <div class="search-signin">
-          <div class="search-box">
-            <input type="text" placeholder="Search book..." />
-          </div>
-          <span>|</span>
-          <a href="#" class="signin-link">Sign In</a>
+        <span>|</span>
+        <a href="#" class="signin-link">Sign In</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="text-content">
+        <h2>Find Your Next Book</h2>
+        <p>
+          Our most popular and trending <b>On.Book</b> perfect.<br />Not sure
+          what to read now? Read the perfect book to match your mood.
+        </p>
+        <button>Explore Now</button>
+      </div>
+      <div class="book-slider">
+        <!-- First Book -->
+        <div class="book framed">
+          <img src="books-images/book1.jpg" alt="The Stranger" />
+          <p>The Stranger<br /><small>Albert Camus</small></p>
+        </div>
+        <!-- Middle Book (reverse-rounded with title/author above the image) -->
+        <div class="book framed reverse">
+          <p>Der Process<br /><small>Franz Kafka</small></p>
+          <img src="books-images/book2.jpg" alt="Der Process" />
+        </div>
+        <!-- Third Book -->
+        <div class="book framed">
+          <img src="books-images/book3.jpg" alt="The Divine Comedy" />
+          <p>The Divine Comedy<br /><small>Dante</small></p>
         </div>
       </div>
-    </header>
+    </div>
+  </section>
 
-    <section class="hero">
-      <div class="hero-content">
-        <div class="text-content">
-          <h2>Find Your Next Book</h2>
-          <p>
-            Our most popular and trending <b>On.Book</b> perfect.<br />Not sure
-            what to read now? Read the perfect book to match your mood.
-          </p>
-          <button>Explore Now</button>
-        </div>
-        <div class="book-slider">
-          <!-- First Book -->
-          <div class="book framed">
-            <img src="books-images/book1.jpg" alt="The Stranger" />
-            <p>The Stranger<br /><small>Albert Camus</small></p>
-          </div>
-          <!-- Middle Book (reverse-rounded with title/author above the image) -->
-          <div class="book framed reverse">
-            <p>Der Process<br /><small>Franz Kafka</small></p>
-            <img src="books-images/book2.jpg" alt="Der Process" />
-          </div>
-          <!-- Third Book -->
-          <div class="book framed">
-            <img src="books-images/book3.jpg" alt="The Divine Comedy" />
-            <p>The Divine Comedy<br /><small>Dante</small></p>
-          </div>
-        </div>
-      </div>
-    </section>
+  <section class="bestsellers">
+    <div class="bestsellers-header">
+      <h2>Bestsellers</h2>
+      <!-- Zoe---------------------------------------------- -->
+      <div class="sort-filter">
+        <select id="sort-dropdown">
+          <option value="" disabled selected>Sort by</option>
+          <option value="titleAZ">Title (A-Z)</option>
+          <option value="titleZA">Title (Z-A)</option>
+          <option value="yearNewest">Year (Newest)</option>
+          <option value="yearOldest">Year (Oldest)</option>
+          <option value="ratingHighest">Rating (Highest)</option>
+          <option value="ratingLowest">Rating (Lowest)</option>
+        </select>
+        <!-- -------------------------------------------------------------------- -->
 
-    <section class="bestsellers">
-      <div class="bestsellers-header">
-        <h2>Bestsellers</h2>
-        <!-- Zoe---------------------------------------------- -->
-        <div class="sort-filter">
-          <select id="sort-dropdown">
-            <option value="" disabled selected>Sort by</option>
-            <option value="titleAZ">Title (A-Z)</option>
-            <option value="titleZA">Title (Z-A)</option>
-            <option value="yearNewest">Year (Newest)</option>
-            <option value="yearOldest">Year (Oldest)</option>
-            <option value="ratingHighest">Rating (Highest)</option>
-            <option value="ratingLowest">Rating (Lowest)</option>
+        <!--Fanny  ------------------------------------------------------------------->
+        <!-- <div class="genre-filter">
+          <select id="filter-dropdown">
+            <option value="" disabled selected>Choose genre</option>
+            <option value="fiction">Fiction</option>
+            <option value="scienceFicton">Sience Fiction</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="adventure">Adventure</option>
+            <option value="horror">Horror</option>
+            <option value="mystery">Mystery</option>
+            <option value="dystopian">Dystopian</option>
           </select>
-          <!-- -------------------------------------------------------------------- -->
-          <button class="sort-btn" id="sort-button">Sort</button>
+        </div> -->
 
-          <button class="filter-btn">Filter</button>
-        </div>
-      </div>
+        <!--Fanny  ------------------------------------------------------------------->
 
-      <!-- -------------------------------------- -->
-      <div class="book-list" id="book-list">
-        <div class="book-item">
-          <img src="books-images/book4.jpg" alt="The Spoke Zarathustra" />
-          <p>The Spoke Zarathustra<br /><small>Friedrich Nietzsche</small></p>
-          <p>$32.00</p>
-          <button>Add</button>
-        </div>
-        <div class="book-item">
-          <img src="books-images/book5.jpg" alt="Confession of a Mask" />
-          <p>Confession of a Mask<br /><small>Yukio Mishima</small></p>
-          <p>$28.00</p>
-          <button>Add</button>
-        </div>
-        <div class="book-item">
-          <img src="books-images/book6.jpg" alt="The Rebel" />
-          <p>The Rebel<br /><small>Albert Camus</small></p>
-          <p>$18.00</p>
-          <button>Add</button>
-        </div>
-        <div class="book-item">
-          <img src="books-images/book7.jpg" alt="1984" />
-          <p>1984<br /><small>George Orwell</small></p>
-          <p>$36.00</p>
-          <button>Add</button>
-        </div>
-        <div class="book-item">
-          <img src="books-images/book8.jpg" alt="1984" />
-          <p>1984<br /><small>George Orwell</small></p>
-          <p>$32.00</p>
-          <button>Add</button>
-        </div>
-        <div class="book-item">
-          <img src="books-images/book9.jpg" alt="1984" />
-          <p>1984<br /><small>George Orwell</small></p>
-          <p>$46.00</p>
-          <button>Add</button>
-        </div>
-        <div class="book-item">
-          <img src="books-images/book10.jpg" alt="1984" />
-          <p>1984<br /><small>George Orwell</small></p>
-          <p>$16.00</p>
-          <button>Add</button>
-        </div>
-        <div class="book-item">
-          <img src="books-images/book11.jpg" alt="1984" />
-          <p>1984<br /><small>George Orwell</small></p>
-          <p>$16.00</p>
-          <button>Add</button>
-        </div>
-        <div class="book-item">
-          <img src="books-images/book12.jpg" alt="1984" />
-          <p>1984<br /><small>George Orwell</small></p>
-          <p>$16.00</p>
-          <button>Add</button>
-        </div>
+        <button class="sort-btn" id="sort-button">Sort</button>
+
+        <button class="genre-btn" id="genre-button">Genre</button>
+
       </div>
-    </section>
-    <script src="script.js" defer></script>
-  </body>
+    </div>
+
+    <!-- -------------------------------------- -->
+    <div class="book-list" id="book-list">
+      <div class="book-item">
+        <img src="books-images/book4.jpg" alt="The Spoke Zarathustra" />
+        <p>The Spoke Zarathustra<br /><small>Friedrich Nietzsche</small></p>
+        <p>$32.00</p>
+        <button>Add</button>
+      </div>
+      <div class="book-item">
+        <img src="books-images/book5.jpg" alt="Confession of a Mask" />
+        <p>Confession of a Mask<br /><small>Yukio Mishima</small></p>
+        <p>$28.00</p>
+        <button>Add</button>
+      </div>
+      <div class="book-item">
+        <img src="books-images/book6.jpg" alt="The Rebel" />
+        <p>The Rebel<br /><small>Albert Camus</small></p>
+        <p>$18.00</p>
+        <button>Add</button>
+      </div>
+      <div class="book-item">
+        <img src="books-images/book7.jpg" alt="1984" />
+        <p>1984<br /><small>George Orwell</small></p>
+        <p>$36.00</p>
+        <button>Add</button>
+      </div>
+      <div class="book-item">
+        <img src="books-images/book8.jpg" alt="1984" />
+        <p>1984<br /><small>George Orwell</small></p>
+        <p>$32.00</p>
+        <button>Add</button>
+      </div>
+      <div class="book-item">
+        <img src="books-images/book9.jpg" alt="1984" />
+        <p>1984<br /><small>George Orwell</small></p>
+        <p>$46.00</p>
+        <button>Add</button>
+      </div>
+      <div class="book-item">
+        <img src="books-images/book10.jpg" alt="1984" />
+        <p>1984<br /><small>George Orwell</small></p>
+        <p>$16.00</p>
+        <button>Add</button>
+      </div>
+      <div class="book-item">
+        <img src="books-images/book11.jpg" alt="1984" />
+        <p>1984<br /><small>George Orwell</small></p>
+        <p>$16.00</p>
+        <button>Add</button>
+      </div>
+      <div class="book-item">
+        <img src="books-images/book12.jpg" alt="1984" />
+        <p>1984<br /><small>George Orwell</small></p>
+        <p>$16.00</p>
+        <button>Add</button>
+      </div>
+    </div>
+  </section>
+  <script src="script.js" defer></script>
+</body>
+
 </html>

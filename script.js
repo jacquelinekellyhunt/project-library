@@ -60,7 +60,7 @@ const books = [
     image: "./books-images/the-hobbit.jpg",
   },
   {
-    title: "Harry Potter",
+    title: "Harry Potter and the Sorcerer's Stone",
     author: "J.K. Rowling",
     year: 1997,
     genre: "Fantasy",
@@ -80,7 +80,7 @@ const books = [
     image: "./books-images/moby-dick.jpg",
   },
   {
-    title: "The Lord of the Rings",
+    title: "The Lord of the Rings: The Fellowship of the Ring",
     author: "J.R.R. Tolkien",
     year: 1954,
     genre: "Fantasy",

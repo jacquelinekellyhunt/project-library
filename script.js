@@ -47,7 +47,7 @@ const books = [
     rating: 4,
     description:
       "Narrated by the teenage Holden Caulfield, the novel explores themes of alienation and the search for authenticity.",
-    image: "./books-images/book5.jpg",
+    image: "./books-images/unknown.jpg",
   },
   {
     title: "The Hobbit",
@@ -67,7 +67,7 @@ const books = [
     rating: 4.7,
     description:
       "The first book in the beloved Harry Potter series, it introduces readers to the magical world of Hogwarts and the young wizard Harry Potter.",
-    image: "./books-images/harry-potter-and-the-sorcerer.jpg",
+    image: "./books-images/harry-potter-and-the-sorcerer'.jpg",
   },
   {
     title: "Moby-Dick",
@@ -97,7 +97,7 @@ const books = [
     rating: 4.3,
     description:
       "A psychological horror novel that tells the story of the Torrance family's terrifying experiences at the haunted Overlook Hotel.",
-    image: "./books-images/book10.jpg",
+    image: "./books-images/unknown.jpg",
   },
   {
     title: "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
@@ -117,7 +117,7 @@ const books = [
     rating: 3.8,
     description:
       "A gripping mystery thriller that follows Harvard symbologist Robert Langdon as he unravels the secrets of the Da Vinci Code.",
-    image: "./books-images/book12.jpg",
+    image: "./books-images/unknown.jpg",
   },
   {
     title: "The Alchemist",
@@ -180,74 +180,3 @@ const books = [
     image: "./books-images/unknown.jpg",
   },
 ];
-
-//---------------------------------------------------------------------------------
-// Function to display books in the HTML
-// Function to display books in the HTML
-function displayBooks(books) {
-  const bookList = document.getElementById("book-list");
-  bookList.innerHTML = ""; // Clear existing content
-  books.forEach((book) => {
-    const bookItem = `
-      <div class="book-item">
-        <img src="${book.image}" alt="${book.title}" />
-        <p>${book.title}<br /><small>${book.author}</small></p>
-        <p>${book.year}</p>
-        <p>Rating: ${book.rating}</p>
-      </div>
-    `;
-    bookList.innerHTML += bookItem;
-  });
-}
-
-// Sort books based on the selected option
-function sortBooks(sortOption) {
-  let sortedBooks = [...books]; // Create a copy of the books array
-
-  if (sortOption === "titleAZ") {
-    sortedBooks.sort((a, b) => a.title.localeCompare(b.title));
-  } else if (sortOption === "titleZA") {
-    sortedBooks.sort((a, b) => b.title.localeCompare(a.title));
-  } else if (sortOption === "yearNewest") {
-    sortedBooks.sort((a, b) => b.year - a.year);
-  } else if (sortOption === "yearOldest") {
-    sortedBooks.sort((a, b) => a.year - b.year);
-  } else if (sortOption === "ratingHighest") {
-    sortedBooks.sort((a, b) => b.rating - a.rating);
-  } else if (sortOption === "ratingLowest") {
-    sortedBooks.sort((a, b) => a.rating - b.rating);
-  }
-
-  // Display the sorted books
-  displayBooks(sortedBooks);
-}
-
-// Function to toggle the visibility of the dropdown
-function toggleDropdown() {
-  const dropdown = document.getElementById("sort-dropdown");
-
-  if (dropdown.style.display === "none" || dropdown.style.display === "") {
-    dropdown.style.display = "block"; // Show the dropdown
-  } else {
-    dropdown.style.display = "none"; // Hide the dropdown
-  }
-}
-
-// Set up event listeners
-document.addEventListener("DOMContentLoaded", function () {
-  const sortButton = document.getElementById("sort-button");
-  const sortDropdown = document.getElementById("sort-dropdown");
-
-  // Show/hide the dropdown on button click
-  sortButton.addEventListener("click", toggleDropdown);
-
-  // Listen for changes in the dropdown
-  sortDropdown.addEventListener("change", function () {
-    const selectedOption = sortDropdown.value;
-    sortBooks(selectedOption); // Sort and display books
-    sortDropdown.style.display = "none"; // Hide the dropdown after selection
-  });
-
-  // Display the initial unsorted list of books
-  displayBooks(books);
-});

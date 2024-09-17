@@ -7,7 +7,7 @@ const books = [
     rating: 4.2,
     description:
       "A classic novel set in the Roaring Twenties, it explores themes of wealth, love, and the American Dream through the enigmatic Jay Gatsby.",
-    image: "./books-images/book1.jpg",
+    image: "./books-images/the-great-gatsby.jpg",
   },
   {
     title: "To Kill a Mockingbird",
@@ -17,7 +17,7 @@ const books = [
     rating: 4.5,
     description:
       "Set in the American South, this novel tackles issues of racism and injustice through the eyes of young Scout Finch.",
-    image: "./books-images/book2.jpg",
+    image: "./books-images/to-kill-a-mockingbird.jpg",
   },
   {
     title: "1984",
@@ -27,7 +27,7 @@ const books = [
     rating: 4.4,
     description:
       "A dystopian classic that explores totalitarianism and the consequences of a surveillance state in a bleak future.",
-    image: "./books-images/book3.jpg",
+    image: "./books-images/1984.jpg",
   },
   {
     title: "Pride and Prejudice",
@@ -37,7 +37,7 @@ const books = [
     rating: 4.25,
     description:
       "A timeless romance novel that examines societal expectations and the misunderstandings that can arise from pride and prejudice.",
-    image: "./books-images/book4.jpg",
+    image: "./books-images/pride-and-prejudice.jpg",
   },
   {
     title: "The Catcher in the Rye",
@@ -57,7 +57,7 @@ const books = [
     rating: 4.6,
     description:
       "A fantasy adventure novel that follows Bilbo Baggins on a quest to help a group of dwarves reclaim their homeland from a dragon.",
-    image: "./books-images/book6.jpg",
+    image: "./books-images/the-hobbit.jpg",
   },
   {
     title: "Harry Potter and the Sorcerer's Stone",
@@ -67,7 +67,7 @@ const books = [
     rating: 4.7,
     description:
       "The first book in the beloved Harry Potter series, it introduces readers to the magical world of Hogwarts and the young wizard Harry Potter.",
-    image: "./books-images/book7'.jpg",
+    image: "./books-images/harry-potter-and-the-sorcerer.jpg",
   },
   {
     title: "Moby-Dick",
@@ -77,7 +77,7 @@ const books = [
     rating: 4.1,
     description:
       "An epic tale of obsession, revenge, and the relentless pursuit of the great white whale, Moby Dick.",
-    image: "./books-images/book8.jpg",
+    image: "./books-images/moby-dick.jpg",
   },
   {
     title: "The Lord of the Rings: The Fellowship of the Ring",
@@ -87,7 +87,7 @@ const books = [
     rating: 4.55,
     description:
       "The first volume of the epic fantasy trilogy follows Frodo Baggins and the Fellowship on their quest to destroy the One Ring.",
-    image: "./books-images/book9.jpg",
+    image: "./books-images/the-lord-of-the-rings.jpg",
   },
   {
     title: "The Shining",
@@ -107,7 +107,7 @@ const books = [
     rating: 4.15,
     description:
       "The first book in the Chronicles of Narnia series, it follows the adventures of children who discover the magical land of Narnia.",
-    image: "./books-images/book11.jpg",
+    image: "./books-images/the-chronicles-of-narnia.jpg",
   },
   {
     title: "The Da Vinci Code",

@@ -294,6 +294,7 @@ const books = [
 
 //---------------------------------------------------------------------------------
 // Function to display books in the HTML
+// Function to display books in the HTML
 function displayBooks(books) {
   const bookList = document.getElementById("book-list");
   bookList.innerHTML = ""; // Clear existing content
@@ -308,10 +309,9 @@ function displayBooks(books) {
     `;
     bookList.innerHTML += bookItem;
   });
-}
+};
 
-// Sort books based on the selected option
-function sortBooks(sortOption) {
+const sortBooks = (sortOption) => {
   let sortedBooks = [...books]; // Create a copy of the books array
 
   if (sortOption === "titleAZ") {
@@ -330,10 +330,9 @@ function sortBooks(sortOption) {
 
   // Display the sorted books
   displayBooks(sortedBooks);
-}
+};
 
-// Function to toggle the visibility of the dropdown
-function toggleDropdown() {
+const toggleDropdown = () => {
   const dropdown = document.getElementById("sort-dropdown");
 
   if (dropdown.style.display === "none" || dropdown.style.display === "") {
@@ -341,10 +340,10 @@ function toggleDropdown() {
   } else {
     dropdown.style.display = "none"; // Hide the dropdown
   }
-}
+};
 
 // Set up event listeners
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
   const sortButton = document.getElementById("sort-button");
   const sortDropdown = document.getElementById("sort-dropdown");
 
@@ -352,7 +351,7 @@ document.addEventListener("DOMContentLoaded", function () {
   sortButton.addEventListener("click", toggleDropdown);
 
   // Listen for changes in the dropdown
-  sortDropdown.addEventListener("change", function () {
+  sortDropdown.addEventListener("change", () => {
     const selectedOption = sortDropdown.value;
     sortBooks(selectedOption); // Sort and display books
     sortDropdown.style.display = "none"; // Hide the dropdown after selection

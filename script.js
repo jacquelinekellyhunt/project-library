@@ -111,26 +111,6 @@ const books = [
     image: "./books-images/book11.jpg",
   },
   {
-    title: "The Great Gatsby",
-    author: "F. Scott Fitzgerald",
-    year: 1925,
-    genre: "Fiction",
-    rating: 4.2,
-    description:
-      "A classic novel set in the Roaring Twenties, it explores themes of wealth, love, and the American Dream through the enigmatic Jay Gatsby.",
-    image: "./books-images/book12.jpg",
-  },
-  {
-    title: "To Kill a Mockingbird",
-    author: "Harper Lee",
-    year: 1960,
-    genre: "Fiction",
-    rating: 4.5,
-    description:
-      "Set in the American South, this novel tackles issues of racism and injustice through the eyes of young Scout Finch.",
-    image: "./books-images/to-kill-a-mockingbird.jpg",
-  },
-  {
     title: "1984",
     author: "George Orwell",
     year: 1949,
@@ -149,16 +129,6 @@ const books = [
     description:
       "A timeless romance novel that examines societal expectations and the misunderstandings that can arise from pride and prejudice.",
     image: "./books-images/pride-and-prejudice.jpg",
-  },
-  {
-    title: "The Catcher in the...",
-    author: "J.D. Salinger",
-    year: 1951,
-    genre: "Fiction",
-    rating: 4,
-    description:
-      "Narrated by the teenage Holden Caulfield, the novel explores themes of alienation and the search for authenticity.",
-    image: "./books-images/book5.jpg",
   },
   {
     title: "The Hobbit",
@@ -181,16 +151,6 @@ const books = [
     image: "./books-images/harry-potter-and-the-sorcerer.jpg",
   },
   {
-    title: "Moby-Dick",
-    author: "Herman Melville",
-    year: 1851,
-    genre: "Adventure",
-    rating: 4.1,
-    description:
-      "An epic tale of obsession, revenge, and the relentless pursuit of the great white whale, Moby Dick.",
-    image: "./books-images/moby-dick.jpg",
-  },
-  {
     title: "The Lord of the Rings",
     author: "J.R.R. Tolkien",
     year: 1954,
@@ -199,26 +159,6 @@ const books = [
     description:
       "The first volume of the epic fantasy trilogy follows Frodo Baggins and the Fellowship on their quest to destroy the One Ring.",
     image: "./books-images/the-lord-of-the-rings.jpg",
-  },
-  {
-    title: "The Shining",
-    author: "Stephen King",
-    year: 1977,
-    genre: "Horror",
-    rating: 4.3,
-    description:
-      "A psychological horror novel that tells the story of the Torrance family's terrifying experiences at the haunted Overlook Hotel.",
-    image: "./books-images/book10.jpg",
-  },
-  {
-    title: "The Chronicles of...",
-    author: "C.S. Lewis",
-    year: 1950,
-    genre: "Fantasy",
-    rating: 4.15,
-    description:
-      "The first book in the Chronicles of Narnia series, it follows the adventures of children who discover the magical land of Narnia.",
-    image: "./books-images/the-chronicles-of-narnia.jpg",
   },
   {
     title: "The Da Vinci Code",
@@ -386,3 +326,5 @@ const genreDropdown = document.getElementById("filter-dropdown"); // Ensure this
 // Event listener for the "Genre" button to toggle dropdown
 
 //------------------------------
+
+

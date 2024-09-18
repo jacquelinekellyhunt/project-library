@@ -1,4 +1,7 @@
 * {
+  outline: 1px solid red; /* Red outline around every element */
+}
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,6 +12,7 @@
 body {
   background-color: #ffffff;
   color: #333;
+  overflow-x: hidden; /* Disable horizontal scrolling */
 }
 
 header {
@@ -488,10 +492,127 @@ header {
   }
 }
 
-/* Small devices (Mobile phones) */
+/* 2 columns for screens smaller than or equal to 600px */
 @media (max-width: 600px) {
   .book-item {
-    flex: 1 1 calc(50% - 20px); /* 2 columns on small screens (mobile) */
+    flex: 1 1 calc(50% - 20px); /* 2 columns on small screens (600px and below) */
+    margin: 0; /* Adjust margin to prevent overflow */
   }
 }
+
+/* 1 column for screens smaller than or equal to 400px */
+@media (max-width: 400px) {
+  .book-item {
+    flex: 1 1 100%; /* 1 column on very small screens (400px and below) */
+  }
+}
+
 /* ------------------------------------------------------------ */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start; /* Align logo and menu items to the left */
+    padding-left: 0; /* Remove excessive padding */
+  }
+
+  .navbar ul {
+    flex-direction: column; /* Stack the navigation links vertically */
+    gap: 10px; /* Reduce the gap */
+    margin-top: 20px; /* Add space below the logo */
+  }
+
+  .logo {
+    margin-bottom: 10px; /* Space between logo and wishlist/search */
+  }
+
+  /* Search and sign-in button alignment */
+  .search-signin {
+    flex-direction: column;
+    align-items: flex-start; /* Align search bar and sign-in vertically */
+    margin-top: 10px;
+  }
+
+  .search-box {
+    width: 100%; /* Full width for the search input */
+  }
+
+  .search-box input {
+    width: 80%; /* Adjust input field width for smaller screens */
+  }
+
+  .search-button {
+    width: 100%; /* Full width for search button */
+    margin-top: 10px;
+  }
+
+  .hero {
+    padding: 20px; /* Reduce padding */
+  }
+
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .text-content h2 {
+    font-size: 2em; /* Smaller font for heading */
+  }
+
+  .text-content p {
+    font-size: 1em; /* Adjust paragraph font size */
+  }
+
+  .book-slider .book img {
+    width: 120px;
+    height: 180px;
+  }
+
+  .book-item img {
+    width: 100px;
+    height: 150px;
+  }
+
+  .sort-filter {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .sort-filter button,
+  .sort-filter select {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .book-item {
+    flex: 1 1 calc(50% - 20px); /* 2 columns on small screens */
+  }
+}
+@media (max-width: 400px) {
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-content h2 {
+    font-size: 1.8em; /* Further reduce font size */
+  }
+
+  .book-item img {
+    width: 80px;
+    height: 120px; /* Smaller book images */
+  }
+
+  .book-item {
+    flex: 1 1 100%; /* 1 column on very small screens */
+  }
+
+  .sort-filter {
+    margin-bottom: 10px; /* Adjust sort filter margin */
+  }
+}

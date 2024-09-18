@@ -70,7 +70,7 @@ const books = [
     image: "./books-images/book7.jpg",
   },
   {
-    title: "The Power of Positive Action",
+    title: "The Power of Positive",
     author: "Drew Feig",
     year: 2000,
     genre: "Fiction",
@@ -179,7 +179,7 @@ const books = [
     description:
       "A dystopian novel set in a seemingly perfect society where young Jonas discovers the dark truth beneath the surface.",
     image: "./books-images/the-giver.jpg",
-  }
+  },
 ];
 
 //---------------------------------------------------------------------------------
@@ -274,11 +274,10 @@ function searchBooksByTitle(searchTerm) {
   );
 
   // Hide the hero section, the bestsellers title adn the buttons when searched
-  document.querySelector('.hero').style.display = 'none';
-  document.querySelector('.bestsellers-header h2').style.display = 'none';
-  document.querySelector('.sort-btn').style.display = 'none';
-  document.querySelector('.genre-btn').style.display = 'none';
-
+  document.querySelector(".hero").style.display = "none";
+  document.querySelector(".bestsellers-header h2").style.display = "none";
+  document.querySelector(".sort-btn").style.display = "none";
+  document.querySelector(".genre-btn").style.display = "none";
 
   if (filteredBooks.length === 0) {
     // Clear the book list and display a message while keeping the header
@@ -292,12 +291,11 @@ function searchBooksByTitle(searchTerm) {
     // Display filtered books in the bestsellers list
     displayBooks(filteredBooks);
   }
-  
 }
 
 // Adding event listener for the search button click
-document.querySelector('.search-button').addEventListener('click', () => {
-  const searchInput = document.querySelector('.search-box input').value;
+document.querySelector(".search-button").addEventListener("click", () => {
+  const searchInput = document.querySelector(".search-box input").value;
   searchBooksByTitle(searchInput);
 });
 
@@ -317,4 +315,3 @@ function displayBooks(books) {
     bookList.innerHTML += bookItem;
   });
 }
-

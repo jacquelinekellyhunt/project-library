@@ -466,5 +466,17 @@ header {
   text-align: center;
   margin: 0;
 }
+/* Medium devices (Tablets, iPads) */
+@media (max-width: 1024px) {
+  .book-item {
+    flex: 1 1 calc(25% - 20px); /* 4 columns on tablets */
+  }
+}
 
+/* Small devices (Mobile phones) */
+@media (max-width: 600px) {
+  .book-item {
+    flex: 1 1 calc(50% - 20px); /* 2 columns on small screens (mobile) */
+  }
+}
 /* ------------------------------------------------------------ */

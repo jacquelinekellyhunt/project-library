@@ -151,7 +151,7 @@ const books = [
     image: "./books-images/pride-and-prejudice.jpg",
   },
   {
-    title: "The Catcher in the Rye",
+    title: "The Catcher in the...",
     author: "J.D. Salinger",
     year: 1951,
     genre: "Fiction",
@@ -171,7 +171,7 @@ const books = [
     image: "./books-images/the-hobbit.jpg",
   },
   {
-    title: "Harry Potter and the Sorcerer's Stone",
+    title: "Harry Potter",
     author: "J.K. Rowling",
     year: 1997,
     genre: "Fantasy",
@@ -191,7 +191,7 @@ const books = [
     image: "./books-images/moby-dick.jpg",
   },
   {
-    title: "The Lord of the Rings: The Fellowship of the Ring",
+    title: "The Lord of the Rings",
     author: "J.R.R. Tolkien",
     year: 1954,
     genre: "Fantasy",
@@ -211,7 +211,7 @@ const books = [
     image: "./books-images/book10.jpg",
   },
   {
-    title: "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
+    title: "The Chronicles of...",
     author: "C.S. Lewis",
     year: 1950,
     genre: "Fantasy",
@@ -238,7 +238,7 @@ const books = [
     rating: 4.25,
     description:
       "A philosophical novel that tells the story of Santiago, a shepherd boy, on his quest to discover his personal legend.",
-    image: "./books-images/unknown.jpg",
+    image: "./books-images/alchemist.jpg",
   },
   {
     title: "The Hunger Games",
@@ -248,17 +248,17 @@ const books = [
     rating: 4.3,
     description:
       "In a dystopian future, Katniss Everdeen becomes a symbol of rebellion when she volunteers to take her sister's place in the brutal Hunger Games.",
-    image: "./books-images/unknown.jpg",
+    image: "./books-images/the-hunger-games-hunger-games.jpg",
   },
   {
-    title: "The Girl with the Dragon Tattoo",
+    title: "The Girl with...",
     author: "Stieg Larsson",
     year: 2005,
     genre: "Mystery",
     rating: 4.1,
     description:
       "A gripping mystery novel featuring investigative journalist Mikael Blomkvist and the enigmatic hacker Lisbeth Salander.",
-    image: "./books-images/unknown.jpg",
+    image: "./books-images/the-girl-with-the-dragon-tattoo.jpg",
   },
   {
     title: "The Road",
@@ -268,17 +268,17 @@ const books = [
     rating: 4,
     description:
       "Set in a post-apocalyptic world, it follows a father and son's harrowing journey to survive and find safety.",
-    image: "./books-images/unknown.jpg",
+    image: "./books-images/road.jpg",
   },
   {
-    title: "The Hitchhiker's Guide to the Galaxy",
-    author: "Douglas Adams",
-    year: 1979,
-    genre: "Science Fiction",
-    rating: 4.35,
+    title: "Little Women",
+    author: "Louisa May Alcott",
+    year: 1868,
+    genre: "Fiction",
+    rating: 4.65,
     description:
-      "A comedic science fiction series that follows the misadventures of Arthur Dent after Earth's destruction.",
-    image: "./books-images/unknown.jpg",
+      "With their father away at the Civil War,times are hard for the March sisters - Meg, Jo,Beth and Amy - and their mother, Marmee.",
+    image: "./books-images/little-women.jpg",
   },
   {
     title: "The Giver",
@@ -288,7 +288,17 @@ const books = [
     rating: 4.12,
     description:
       "A dystopian novel set in a seemingly perfect society where young Jonas discovers the dark truth beneath the surface.",
-    image: "./books-images/unknown.jpg",
+    image: "./books-images/the-giver.jpg",
+  },
+  {
+    title: "The Hitchhiker's guide...",
+    author: "J.R.R. Tolkien",
+    year: 1937,
+    genre: "Fantasy",
+    rating: 4.6,
+    description:
+      "A fantasy adventure novel that follows Bilbo Baggins on a quest to help a group of dwarves reclaim their homeland from a dragon.",
+    image: "./books-images/the-hitchhikers-guide-to-the-galaxy.jpg",
   },
 ];
 
@@ -309,7 +319,7 @@ function displayBooks(books) {
     `;
     bookList.innerHTML += bookItem;
   });
-};
+}
 
 const sortBooks = (sortOption) => {
   let sortedBooks = [...books]; // Create a copy of the books array
@@ -361,21 +371,18 @@ document.addEventListener("DOMContentLoaded", () => {
   displayBooks(books);
 });
 
-//Fanny------------------------------------------------------------------------- 
+//Fanny-------------------------------------------------------------------------
 // Function for the genre filter
 const filterByGenre = (bookList, genre) => {
-  return bookList.filter(book => book.genre === genre);
+  return bookList.filter((book) => book.genre === genre);
 };
 
 // Getting the genre button and dropdown from HTML
-const genreButton = document.getElementById('genre-button');
-const genreDropdown = document.getElementById('filter-dropdown'); // Ensure this ID matches your HTML
+const genreButton = document.getElementById("genre-button");
+const genreDropdown = document.getElementById("filter-dropdown"); // Ensure this ID matches your HTML
 
 // Function to toggle the visibility of the dropdown
 
 // Event listener for the "Genre" button to toggle dropdown
 
-
 //------------------------------
-
-

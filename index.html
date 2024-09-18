@@ -1,90 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>On.Book Library</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>On.Book Library</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet" />
-</head>
-
-<body>
-  <header>
-    <div class="navbar">
-      <div class="logo">
-        <h1>On.Book</h1>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#">Books</a></li>
-          <li><a href="#">Categories</a></li>
-          <li><a href="#">Wishlist</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">About Us</a></li>
-        </ul>
-      </nav>
-      <div class="search-signin">
-        <div class="search-box">
-          <input type="text" placeholder="Search book..." />
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <h1>On.Book</h1>
         </div>
-        <span>|</span>
-        <a href="javascript:void(0)" class="search-button">Search</a>
-      </div>
-    </div>
-  </header>
-
-  <section class="hero">
-    <div class="hero-content">
-      <div class="text-content">
-        <h2>Find Your Next Book</h2>
-        <p>
-          Our most popular and trending <b>On.Book</b> perfect.<br />Not sure
-          what to read now? Read the perfect book to match your mood.
-        </p>
-        <button>Explore Now</button>
-      </div>
-      <div class="book-slider">
-        <!-- First Book -->
-        <div class="book framed">
-          <img src="books-images/book1.jpg" alt="The Stranger" />
-          <p>The Stranger<br /><small>Albert Camus</small></p>
-        </div>
-        <!-- Middle Book (reverse-rounded with title/author above the image) -->
-        <div class="book framed reverse">
-          <p>Der Process<br /><small>Franz Kafka</small></p>
-          <img src="books-images/book2.jpg" alt="Der Process" />
-        </div>
-        <!-- Third Book -->
-        <div class="book framed">
-          <img src="books-images/book3.jpg" alt="The Divine Comedy" />
-          <p>The Divine Comedy<br /><small>Dante</small></p>
+        <nav>
+          <ul>
+            <li><a href="#">Books</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Wishlist</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+        </nav>
+        <div class="search-signin">
+          <div class="search-box">
+            <input type="text" placeholder="Search book..." />
+          </div>
+          <span>|</span>
+          <a href="javascript:void(0)" class="search-button">Search</a>
         </div>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <section class="bestsellers">
-    <div class="bestsellers-header">
-      <h2>Bestsellers</h2>
-      <!-- Zoe---------------------------------------------- -->
-      <div class="sort-filter">
-        <select id="sort-dropdown">
-          <option value="" disabled selected>Sort by</option>
-          <option value="titleAZ">Title (A-Z)</option>
-          <option value="titleZA">Title (Z-A)</option>
-          <option value="yearNewest">Year (Newest)</option>
-          <option value="yearOldest">Year (Oldest)</option>
-          <option value="ratingHighest">Rating (Highest)</option>
-          <option value="ratingLowest">Rating (Lowest)</option>
-        </select>
-        <!-- -------------------------------------------------------------------- -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="text-content">
+          <h2>Find Your Next Book</h2>
+          <p>
+            Our most popular and trending <b>On.Book</b> perfect.<br />Not sure
+            what to read now? Read the perfect book to match your mood.
+          </p>
+          <button>Explore Now</button>
+        </div>
+        <div class="book-slider">
+          <!-- First Book -->
+          <div class="book framed">
+            <img src="books-images/book1.jpg" alt="The Stranger" />
+            <p>The Stranger<br /><small>Albert Camus</small></p>
+          </div>
+          <!-- Middle Book (reverse-rounded with title/author above the image) -->
+          <div class="book framed reverse">
+            <p>Der Process<br /><small>Franz Kafka</small></p>
+            <img src="books-images/book2.jpg" alt="Der Process" />
+          </div>
+          <!-- Third Book -->
+          <div class="book framed">
+            <img src="books-images/book3.jpg" alt="The Divine Comedy" />
+            <p>The Divine Comedy<br /><small>Dante</small></p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!--Fanny  ------------------------------------------------------------------->
-        <!-- <div class="genre-filter">
+    <section class="bestsellers">
+      <div class="bestsellers-header">
+        <h2>Bestsellers</h2>
+        <!-- Zoe---------------------------------------------- -->
+        <div class="sort-filter">
+          <select id="sort-dropdown">
+            <option value="" disabled selected>Sort by</option>
+            <option value="titleAZ">Title (A-Z)</option>
+            <option value="titleZA">Title (Z-A)</option>
+            <option value="yearNewest">Year (Newest)</option>
+            <option value="yearOldest">Year (Oldest)</option>
+            <option value="ratingHighest">Rating (Highest)</option>
+            <option value="ratingLowest">Rating (Lowest)</option>
+          </select>
+          <!-- -------------------------------------------------------------------- -->
+
+          <!--Fanny  ------------------------------------------------------------------->
+          <!-- <div class="genre-filter">
           <select id="filter-dropdown">
             <option value="" disabled selected>Choose genre</option>
             <option value="fiction">Fiction</option>
@@ -97,110 +98,117 @@
           </select>
         </div> -->
 
-        <!--Fanny  ------------------------------------------------------------------->
+          <!--Fanny  ------------------------------------------------------------------->
 
-        <button class="sort-btn" id="sort-button">Sort</button>
+          <button class="sort-btn" id="sort-button">Sort</button>
 
-        <button class="genre-btn" id="genre-button">Genre</button>
+          <button class="genre-btn" id="genre-button">Genre</button>
+        </div>
+      </div>
 
+      <!-- -------------------------------------- -->
+      <div class="book-list" id="book-list">
+        <div class="book-item">
+          <img src="books-images/book1.jpg" alt="Journeying with Faith" />
+          <p>Journeying with Faith<br /><small>Sophia Gracewood</small></p>
+          <p>$32.00</p>
+        </div>
+        <div class="book-item">
+          <img src="books-images/book2.jpg" alt="Confession of a Mask" />
+          <p>The Invisible Man<br /><small>Olivia Wilson</small></p>
+          <p>$28.00</p>
+        </div>
+        <div class="book-item">
+          <img src="books-images/book3.jpg" alt="The Rebel" />
+          <p>Art History<br /><small>Lars Peeters</small></p>
+          <p>$18.00</p>
+        </div>
+        <div class="book-item">
+          <img src="books-images/book4.jpg" alt="Modish" />
+          <p>Modish<br /><small>Harper Russo</small></p>
+          <p>$36.00</p>
+        </div>
+        <div class="book-item">
+          <img src="books-images/book5.jpg" alt="Eyes" />
+          <p>Eyes<br /><small>Drew Feig</small></p>
+          <p>$32.00</p>
+        </div>
+        <div class="book-item">
+          <img src="books-images/book6.jpg" alt="Memory Book" />
+          <p>Memory Book<br /><small>Alex Renfield</small></p>
+          <p>$46.00</p>
+        </div>
+        <div class="book-item">
+          <img src="books-images/book7.jpg" alt="Venus" />
+          <p>Venus<br /><small>Margarita Perez</small></p>
+          <p>$16.00</p>
+        </div>
+        <div class="book-item">
+          <img
+            src="books-images/book8.jpg"
+            alt="The Power of Positive Action"
+          />
+          <p>The Power of Positive Action<br /><small>Drew Feig</small></p>
+          <p>$36.00</p>
+        </div>
+        <div class="book-item">
+          <img src="books-images/book9.jpg" alt="Classic Painting" />
+          <p>Classic Painting<br /><small>Donna Stroupe</small></p>
+          <p>$56.00</p>
+        </div>
+        <div class="book-item">
+          <img src="books-images/book10.jpg" alt="Puzzles" />
+          <p>Puzzles<br /><small>Harper Russo</small></p>
+          <p>$56.00</p>
+        </div>
+        <div class="book-item">
+          <img src="books-images/book11.jpg" alt="Classic Literature" />
+          <p>Classic Literature<br /><small>Harper Russo</small></p>
+          <p>$56.00</p>
+        </div>
+        <div class="book-item">
+          <img src="books-images/book12.jpg" alt="The Eye" />
+          <p>The Eye<br /><small>Morgan Maxwell</small></p>
+          <p>$56.00</p>
+        </div>
+        <div class="book-item">
+          <img src="books-images/alchemist.jpg" alt="The Alchemist" />
+          <p>The Alchemist<br /><small>Paulo Coelho</small></p>
+          <p>$21.00</p>
+        </div>
+        <div class="book-item">
+          <img
+            src="books-images/the-hunger-games-hunger-games.jpg"
+            alt="The Hunger Games"
+          />
+          <p>The Hunger Games<br /><small>Suzanne Collins</small></p>
+          <p>$31.00</p>
+        </div>
+        <div class="book-item">
+          <img
+            src="books-images/the-girl-with-the-dragon-tattoo.jpg"
+            alt="The Girl with..."
+          />
+          <p>The Girl with...<br /><small>Stieg Larsson</small></p>
+          <p>$45.00</p>
+        </div>
+        <div class="book-item">
+          <img src="books-images/road.jpg" alt="The Road" />
+          <p>The Road<br /><small>Cormac McCarthy</small></p>
+          <p>$15.00</p>
+        </div>
+        <div class="book-item">
+          <img src="books-images/little-women.jpg" alt="Little Women" />
+          <p>Little Women<br /><small>Louisa May Alcott</small></p>
+          <p>$25.00</p>
+        </div>
+        <div class="book-item">
+          <img src="books-images/the-giver.jpg" alt="The Giver" />
+          <p>The Giver<br /><small>Lois Lowry</small></p>
+          <p>$35.00</p>
+        </div>
       </div>
-    </div>
-
-    <!-- -------------------------------------- -->
-    <div class="book-list" id="book-list">
-      <div class="book-item">
-        <img src="books-images/book1.jpg" alt="Journeying with Faith" />
-        <p>Journeying with Faith<br /><small>Sophia Gracewood</small></p>
-        <p>$32.00</p>
-      </div>
-      <div class="book-item">
-        <img src="books-images/book2.jpg" alt="Confession of a Mask" />
-        <p>The Invisible Man<br /><small>Olivia Wilson</small></p>
-        <p>$28.00</p>
-      </div>
-      <div class="book-item">
-        <img src="books-images/book3.jpg" alt="The Rebel" />
-        <p>Art History<br /><small>Lars Peeters</small></p>
-        <p>$18.00</p>
-      </div>
-      <div class="book-item">
-        <img src="books-images/book4.jpg" alt="Modish" />
-        <p>Modish<br /><small>Harper Russo</small></p>
-        <p>$36.00</p>
-      </div>
-      <div class="book-item">
-        <img src="books-images/book5.jpg" alt="Eyes" />
-        <p>Eyes<br /><small>Drew Feig</small></p>
-        <p>$32.00</p>
-      </div>
-      <div class="book-item">
-        <img src="books-images/book6.jpg" alt="Memory Book" />
-        <p>Memory Book<br /><small>Alex Renfield</small></p>
-        <p>$46.00</p>
-      </div>
-      <div class="book-item">
-        <img src="books-images/book7.jpg" alt="Venus" />
-        <p>Venus<br /><small>Margarita Perez</small></p>
-        <p>$16.00</p>
-      </div>
-      <div class="book-item">
-        <img src="books-images/book8.jpg" alt="The Power of Positive Action" />
-        <p>The Power of Positive Action<br /><small>Drew Feig</small></p>
-        <p>$36.00</p>
-      </div>
-      <div class="book-item">
-        <img src="books-images/book9.jpg" alt="Classic Painting" />
-        <p>Classic Painting<br /><small>Donna Stroupe</small></p>
-        <p>$56.00</p>
-      </div>
-      <div class="book-item">
-        <img src="books-images/book10.jpg" alt="Puzzles" />
-        <p>Puzzles<br /><small>Harper Russo</small></p>
-        <p>$56.00</p>
-      </div>
-      <div class="book-item">
-        <img src="books-images/book11.jpg" alt="Classic Literature" />
-        <p>Classic Literature<br /><small>Harper Russo</small></p>
-        <p>$56.00</p>
-      </div>
-      <div class="book-item">
-        <img src="books-images/book12.jpg" alt="The Eye" />
-        <p>The Eye<br /><small>Morgan Maxwell</small></p>
-        <p>$56.00</p>
-      </div>
-      <div class="book-item">
-        <img src="books-images/alchemist.jpg" alt="The Alchemist" />
-        <p>The Alchemist<br /><small>Paulo Coelho</small></p>
-        <p>$21.00</p>
-      </div>
-      <div class="book-item">
-        <img src="books-images/the-hunger-games-hunger-games.jpg" alt="The Hunger Games" />
-        <p>The Hunger Games<br /><small>Suzanne Collins</small></p>
-        <p>$31.00</p>
-      </div>
-      <div class="book-item">
-        <img src="books-images/the-girl-with-the-dragon-tattoo.jpg" alt="The Girl with..." />
-        <p>The Girl with...<br /><small>Stieg Larsson</small></p>
-        <p>$45.00</p>
-      </div>
-      <div class="book-item">
-        <img src="books-images/road.jpg" alt="The Road" />
-        <p>The Road<br /><small>Cormac McCarthy</small></p>
-        <p>$15.00</p>
-      </div>
-      <div class="book-item">
-        <img src="books-images/little-women.jpg" alt="Little Women" />
-        <p>Little Women<br /><small>Louisa May Alcott</small></p>
-        <p>$25.00</p>
-      </div>
-      <div class="book-item">
-        <img src="books-images/the-giver.jpg" alt="The Giver" />
-        <p>The Giver<br /><small>Lois Lowry</small></p>
-        <p>$35.00</p>
-      </div>
-    </div>
-  </section>
-  <script src="script.js" defer></script>
-</body>
-
+    </section>
+    <script src="script.js" defer></script>
+  </body>
 </html>

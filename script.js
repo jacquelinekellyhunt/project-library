@@ -1,233 +1,123 @@
 const books = [
   {
-    title: "The Great Gatsby",
-    author: "F. Scott Fitzgerald",
+    title: "Journeying with Faith",
+    author: "Sophia Gracewood",
     year: 1925,
     genre: "Fiction",
     rating: 4.2,
     description:
-      "A classic novel set in the Roaring Twenties, it explores themes of wealth, love, and the American Dream through the enigmatic Jay Gatsby.",
+      "A beautifully crafted journal to inspire your spiritual journey, guiding you through daily reflections and prayers to deepen your faith, one moment of devotion at a time.",
     image: "./books-images/book1.jpg",
   },
   {
-    title: "The Great Gatsby",
-    author: "F. Scott Fitzgerald",
+    title: "The Invisible Man",
+    author: "Olivia Wilson",
     year: 1925,
     genre: "Fiction",
-    rating: 4.2,
+    rating: 2.8,
     description:
-      "A classic novel set in the Roaring Twenties, it explores themes of wealth, love, and the American Dream through the enigmatic Jay Gatsby.",
+      "A haunting tale of a man lost in the shadows of his own existence, struggling with the power of invisibility and the price of being unseen in a world that demands recognition.",
     image: "./books-images/book2.jpg",
   },
   {
-    title: "The Great Gatsby",
-    author: "F. Scott Fitzgerald",
+    title: "Art History",
+    author: "Lars Peeters",
     year: 1925,
     genre: "Fiction",
-    rating: 4.2,
+    rating: 4.0,
     description:
-      "A classic novel set in the Roaring Twenties, it explores themes of wealth, love, and the American Dream through the enigmatic Jay Gatsby.",
+      "A comprehensive exploration of the timeless masterpieces that shaped the course of art, examining the cultural and historical significance of iconic works from antiquity to the modern era.",
     image: "./books-images/book3.jpg",
   },
   {
-    title: "The Great Gatsby",
-    author: "F. Scott Fitzgerald",
-    year: 1925,
+    title: "Modish",
+    author: "Harper Russo",
+    year: 2024,
     genre: "Fiction",
-    rating: 4.2,
+    rating: 2.5,
     description:
-      "A classic novel set in the Roaring Twenties, it explores themes of wealth, love, and the American Dream through the enigmatic Jay Gatsby.",
+      "An avant-garde exploration of modern fashion, design, and culture, capturing the essence of contemporary style through striking visuals and thought-provoking commentary on the trends that shape our world.",
     image: "./books-images/book4.jpg",
   },
   {
-    title: "The Great Gatsby",
-    author: "F. Scott Fitzgerald",
+    title: "Eyes",
+    author: "Drew Feig",
     year: 1925,
     genre: "Fiction",
-    rating: 4.2,
+    rating: 3.5,
     description:
-      "A classic novel set in the Roaring Twenties, it explores themes of wealth, love, and the American Dream through the enigmatic Jay Gatsby.",
+      "A captivating exploration of perception, identity, and the hidden truths we choose to see or ignore, where the lines between reality and illusion blur in a world constantly watched.",
     image: "./books-images/book5.jpg",
   },
   {
-    title: "The Great Gatsby",
-    author: "F. Scott Fitzgerald",
-    year: 1925,
+    title: "Memory Book",
+    author: "Alex Renfield",
+    year: 2004,
     genre: "Fiction",
-    rating: 4.2,
+    rating: 4.3,
     description:
-      "A classic novel set in the Roaring Twenties, it explores themes of wealth, love, and the American Dream through the enigmatic Jay Gatsby.",
+      "A heartfelt memory book designed to capture and preserve the most cherished moments of your life, filled with personal reflections and meaningful snapshots that tell your unique story.",
     image: "./books-images/book6.jpg",
   },
   {
-    title: "The Great Gatsby",
-    author: "F. Scott Fitzgerald",
-    year: 1925,
+    title: "Venus",
+    author: "Margarita Perez",
+    year: 2021,
     genre: "Fiction",
-    rating: 4.2,
+    rating: 4.8,
     description:
-      "A classic novel set in the Roaring Twenties, it explores themes of wealth, love, and the American Dream through the enigmatic Jay Gatsby.",
+      "A mesmerizing journey to the mysterious planet of Venus, where love, beauty, and the unknown intertwine, revealing a world both enchanting and perilous in the depths of the cosmos.",
     image: "./books-images/book7.jpg",
   },
   {
-    title: "The Great Gatsby",
-    author: "F. Scott Fitzgerald",
-    year: 1925,
+    title: "The Power of Positive Action",
+    author: "Drew Feig",
+    year: 2000,
     genre: "Fiction",
-    rating: 4.2,
+    rating: 5.0,
     description:
-      "A classic novel set in the Roaring Twenties, it explores themes of wealth, love, and the American Dream through the enigmatic Jay Gatsby.",
+      "A transformative guide to unlocking your potential and breaking through barriers, it empowers you with actionable strategies to harness the power of positive thinking and achieve your dreams.",
     image: "./books-images/book8.jpg",
   },
   {
-    title: "The Great Gatsby",
-    author: "F. Scott Fitzgerald",
-    year: 1925,
+    title: "Classic Painting",
+    author: "Donna Stroupe",
+    year: 1999,
     genre: "Fiction",
-    rating: 4.2,
+    rating: 4.4,
     description:
-      "A classic novel set in the Roaring Twenties, it explores themes of wealth, love, and the American Dream through the enigmatic Jay Gatsby.",
+      "A captivating exploration of timeless masterpieces from the Renaissance to the Baroque, it delves into the rich history and techniques of the greatest artists who shaped Western art.",
     image: "./books-images/book9.jpg",
   },
   {
-    title: "The Great Gatsby",
-    author: "F. Scott Fitzgerald",
-    year: 1925,
+    title: "Puzzles",
+    author: "Harper Russo",
+    year: 2005,
     genre: "Fiction",
     rating: 4.2,
     description:
-      "A classic novel set in the Roaring Twenties, it explores themes of wealth, love, and the American Dream through the enigmatic Jay Gatsby.",
+      "A gripping exploration of identity, relationships, and the fragmented nature of human experience, it pieces together the complexities of life, offering a thought-provoking narrative that challenges how we see ourselves and others.",
     image: "./books-images/book10.jpg",
   },
 
   {
-    title: "The Great Gatsby",
-    author: "F. Scott Fitzgerald",
-    year: 1925,
+    title: "Classic Literature",
+    author: "Shawn Garcia",
+    year: 1950,
     genre: "Fiction",
-    rating: 4.2,
+    rating: 4.6,
     description:
-      "A classic novel set in the Roaring Twenties, it explores themes of wealth, love, and the American Dream through the enigmatic Jay Gatsby.",
+      "An engaging collection of timeless literary masterpieces, it revisits the most influential works that have shaped the world of storytelling, offering deep insights into the human experience through the lens of history’s greatest writers.",
     image: "./books-images/book11.jpg",
   },
   {
-    title: "The Great Gatsby",
-    author: "F. Scott Fitzgerald",
-    year: 1925,
-    genre: "Fiction",
-    rating: 4.2,
-    description:
-      "A classic novel set in the Roaring Twenties, it explores themes of wealth, love, and the American Dream through the enigmatic Jay Gatsby.",
-    image: "./books-images/book12.jpg",
-  },
-  {
-    title: "To Kill a Mockingbird",
-    author: "Harper Lee",
-    year: 1960,
-    genre: "Fiction",
-    rating: 4.5,
-    description:
-      "Set in the American South, this novel tackles issues of racism and injustice through the eyes of young Scout Finch.",
-    image: "./books-images/to-kill-a-mockingbird.jpg",
-  },
-  {
-    title: "1984",
-    author: "George Orwell",
-    year: 1949,
+    title: "The Eye",
+    author: "Morgan Maxwell",
+    year: 2021,
     genre: "Science Fiction",
     rating: 4.4,
     description:
-      "A dystopian classic that explores totalitarianism and the consequences of a surveillance state in a bleak future.",
-    image: "./books-images/1984.jpg",
-  },
-  {
-    title: "Pride and Prejudice",
-    author: "Jane Austen",
-    year: 1813,
-    genre: "Fiction",
-    rating: 4.25,
-    description:
-      "A timeless romance novel that examines societal expectations and the misunderstandings that can arise from pride and prejudice.",
-    image: "./books-images/pride-and-prejudice.jpg",
-  },
-  {
-    title: "The Catcher in the Rye",
-    author: "J.D. Salinger",
-    year: 1951,
-    genre: "Fiction",
-    rating: 4,
-    description:
-      "Narrated by the teenage Holden Caulfield, the novel explores themes of alienation and the search for authenticity.",
-    image: "./books-images/book5.jpg",
-  },
-  {
-    title: "The Hobbit",
-    author: "J.R.R. Tolkien",
-    year: 1937,
-    genre: "Fantasy",
-    rating: 4.6,
-    description:
-      "A fantasy adventure novel that follows Bilbo Baggins on a quest to help a group of dwarves reclaim their homeland from a dragon.",
-    image: "./books-images/the-hobbit.jpg",
-  },
-  {
-    title: "Harry Potter and the Sorcerer's Stone",
-    author: "J.K. Rowling",
-    year: 1997,
-    genre: "Fantasy",
-    rating: 4.7,
-    description:
-      "The first book in the beloved Harry Potter series, it introduces readers to the magical world of Hogwarts and the young wizard Harry Potter.",
-    image: "./books-images/harry-potter-and-the-sorcerer.jpg",
-  },
-  {
-    title: "Moby-Dick",
-    author: "Herman Melville",
-    year: 1851,
-    genre: "Adventure",
-    rating: 4.1,
-    description:
-      "An epic tale of obsession, revenge, and the relentless pursuit of the great white whale, Moby Dick.",
-    image: "./books-images/moby-dick.jpg",
-  },
-  {
-    title: "The Lord of the Rings: The Fellowship of the Ring",
-    author: "J.R.R. Tolkien",
-    year: 1954,
-    genre: "Fantasy",
-    rating: 4.55,
-    description:
-      "The first volume of the epic fantasy trilogy follows Frodo Baggins and the Fellowship on their quest to destroy the One Ring.",
-    image: "./books-images/the-lord-of-the-rings.jpg",
-  },
-  {
-    title: "The Shining",
-    author: "Stephen King",
-    year: 1977,
-    genre: "Horror",
-    rating: 4.3,
-    description:
-      "A psychological horror novel that tells the story of the Torrance family's terrifying experiences at the haunted Overlook Hotel.",
-    image: "./books-images/book10.jpg",
-  },
-  {
-    title: "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
-    author: "C.S. Lewis",
-    year: 1950,
-    genre: "Fantasy",
-    rating: 4.15,
-    description:
-      "The first book in the Chronicles of Narnia series, it follows the adventures of children who discover the magical land of Narnia.",
-    image: "./books-images/the-chronicles-of-narnia.jpg",
-  },
-  {
-    title: "The Da Vinci Code",
-    author: "Dan Brown",
-    year: 2003,
-    genre: "Mystery",
-    rating: 3.8,
-    description:
-      "A gripping mystery thriller that follows Harvard symbologist Robert Langdon as he unravels the secrets of the Da Vinci Code.",
+      "A thought-provoking journey into the depths of consciousness, it invites you to unlock the hidden potential of your mind and explore the mysteries that shape your perception of reality.",
     image: "./books-images/book12.jpg",
   },
   {
@@ -238,7 +128,7 @@ const books = [
     rating: 4.25,
     description:
       "A philosophical novel that tells the story of Santiago, a shepherd boy, on his quest to discover his personal legend.",
-    image: "./books-images/unknown.jpg",
+    image: "./books-images/alchemist.jpg",
   },
   {
     title: "The Hunger Games",
@@ -248,17 +138,17 @@ const books = [
     rating: 4.3,
     description:
       "In a dystopian future, Katniss Everdeen becomes a symbol of rebellion when she volunteers to take her sister's place in the brutal Hunger Games.",
-    image: "./books-images/unknown.jpg",
+    image: "./books-images/the-hunger-games-hunger-games.jpg",
   },
   {
-    title: "The Girl with the Dragon Tattoo",
+    title: "The Girl with...",
     author: "Stieg Larsson",
     year: 2005,
     genre: "Mystery",
     rating: 4.1,
     description:
       "A gripping mystery novel featuring investigative journalist Mikael Blomkvist and the enigmatic hacker Lisbeth Salander.",
-    image: "./books-images/unknown.jpg",
+    image: "./books-images/the-girl-with-the-dragon-tattoo.jpg",
   },
   {
     title: "The Road",
@@ -268,17 +158,17 @@ const books = [
     rating: 4,
     description:
       "Set in a post-apocalyptic world, it follows a father and son's harrowing journey to survive and find safety.",
-    image: "./books-images/unknown.jpg",
+    image: "./books-images/road.jpg",
   },
   {
-    title: "The Hitchhiker's Guide to the Galaxy",
-    author: "Douglas Adams",
-    year: 1979,
-    genre: "Science Fiction",
-    rating: 4.35,
+    title: "Little Women",
+    author: "Louisa May Alcott",
+    year: 1868,
+    genre: "Fiction",
+    rating: 4.65,
     description:
-      "A comedic science fiction series that follows the misadventures of Arthur Dent after Earth's destruction.",
-    image: "./books-images/unknown.jpg",
+      "With their father away at the Civil War,times are hard for the March sisters - Meg, Jo,Beth and Amy - and their mother, Marmee.",
+    image: "./books-images/little-women.jpg",
   },
   {
     title: "The Giver",
@@ -288,13 +178,14 @@ const books = [
     rating: 4.12,
     description:
       "A dystopian novel set in a seemingly perfect society where young Jonas discovers the dark truth beneath the surface.",
-    image: "./books-images/unknown.jpg",
-  },
+    image: "./books-images/the-giver.jpg",
+  }
 ];
 
 //---------------------------------------------------------------------------------
 // Function to display books in the HTML
-const displayBooks = (books) => {
+// Function to display books in the HTML
+function displayBooks(books) {
   const bookList = document.getElementById("book-list");
   bookList.innerHTML = ""; // Clear existing content
   books.forEach((book) => {
@@ -308,7 +199,7 @@ const displayBooks = (books) => {
     `;
     bookList.innerHTML += bookItem;
   });
-};
+}
 
 const sortBooks = (sortOption) => {
   let sortedBooks = [...books]; // Create a copy of the books array
@@ -359,3 +250,71 @@ document.addEventListener("DOMContentLoaded", () => {
   // Display the initial unsorted list of books
   displayBooks(books);
 });
+
+//Fanny-------------------------------------------------------------------------
+// Function for the genre filter
+const filterByGenre = (bookList, genre) => {
+  return bookList.filter((book) => book.genre === genre);
+};
+
+// Getting the genre button and dropdown from HTML
+const genreButton = document.getElementById("genre-button");
+const genreDropdown = document.getElementById("filter-dropdown"); // Ensure this ID matches your HTML
+
+// Function to toggle the visibility of the dropdown
+
+// Event listener for the "Genre" button to toggle dropdown
+
+//------------------------------
+
+// Function to filter books by title based on user input
+function searchBooksByTitle(searchTerm) {
+  const filteredBooks = books.filter((book) =>
+    book.title.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  // Hide the hero section, the bestsellers title adn the buttons when searched
+  document.querySelector('.hero').style.display = 'none';
+  document.querySelector('.bestsellers-header h2').style.display = 'none';
+  document.querySelector('.sort-btn').style.display = 'none';
+  document.querySelector('.genre-btn').style.display = 'none';
+
+
+  if (filteredBooks.length === 0) {
+    // Clear the book list and display a message while keeping the header
+    const bookList = document.getElementById("book-list");
+    bookList.innerHTML = `
+      <div style="display: flex; justify-content: center; align-items: center; height: 300px; width: 100%; background-color: white;">
+        <p>No books with such search term</p>
+      </div>
+    `;
+  } else {
+    // Display filtered books in the bestsellers list
+    displayBooks(filteredBooks);
+  }
+  
+}
+
+// Adding event listener for the search button click
+document.querySelector('.search-button').addEventListener('click', () => {
+  const searchInput = document.querySelector('.search-box input').value;
+  searchBooksByTitle(searchInput);
+});
+
+// Function to display books in the HTML
+function displayBooks(books) {
+  const bookList = document.getElementById("book-list");
+  bookList.innerHTML = ""; // Clear existing content
+  books.forEach((book) => {
+    const bookItem = `
+      <div class="book-item">
+        <img src="${book.image}" alt="${book.title}" />
+        <p>${book.title}<br /><small>${book.author}</small></p>
+        <p>${book.year}</p>
+        <p>Rating: ${book.rating}</p>
+      </div>
+    `;
+    bookList.innerHTML += bookItem;
+  });
+}
+

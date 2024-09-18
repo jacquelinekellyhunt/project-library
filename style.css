@@ -42,6 +42,21 @@ header {
   /* Space between elements */
 }
 
+/* Style for the search button to match the Explore Now button */
+.search-button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #f8efe4;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+}
+
+.search-button:hover {
+  background-color: #555;
+  color: #fff;
+}
+
 .search-box {
   display: flex;
   align-items: center;

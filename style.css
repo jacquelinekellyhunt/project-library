@@ -1,12 +1,14 @@
-* {
-  outline: 1px solid red; /* Red outline around every element */
-}
+/* {
+  outline: 1px solid red; /* Red outline around every element 
+}*/
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "PT Serif", serif;
-  /* Set default font to PT Serif */
+  / * Set default font to PT Serif */
 }
 
 body {
@@ -101,6 +103,7 @@ header {
 .hero {
   background-color: #f8efe4;
   padding: 50px;
+  overflow: hidden; /* Hide any overflow caused by child elements */
 }
 
 .hero-content {

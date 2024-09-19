@@ -283,7 +283,13 @@ function searchBooksByTitle(searchTerm) {
     // Clear the book list and display a message while keeping the header
     const bookList = document.getElementById("book-list");
     bookList.innerHTML = `
-      <div style="display: flex; justify-content: center; align-items: center; height: 300px; width: 100%; background-color: white;">
+      <div style=
+        "display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        height: 300px; 
+        width: 100%; 
+        background-color: white;">
         <p>No books with such search term</p>
       </div>
     `;

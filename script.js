@@ -184,7 +184,7 @@ const books = [
 
 //---------------------------------------------------------------------------------
 // Function to display books in the HTML
-// Function to display books in the HTML
+
 function displayBooks(books) {
   const bookList = document.getElementById("book-list");
   bookList.innerHTML = ""; // Clear existing content
@@ -195,6 +195,7 @@ function displayBooks(books) {
         <p>${book.title}<br /><small>${book.author}</small></p>
         <p>${book.year}</p>
         <p>Rating: ${book.rating}</p>
+        
       </div>
     `;
     bookList.innerHTML += bookItem;

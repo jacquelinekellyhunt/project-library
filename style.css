@@ -8,7 +8,8 @@
 body {
   background-color: #ffffff;
   color: #333;
-  overflow-x: hidden; /* Disable horizontal scrolling */
+  overflow-x: hidden;
+  /* Disable horizontal scrolling */
 }
 
 header {
@@ -97,7 +98,8 @@ header {
 .hero {
   background-color: #f8efe4;
   padding: 50px;
-  overflow: hidden; /* Hide any overflow caused by child elements */
+  overflow: hidden;
+  /* Hide any overflow caused by child elements */
   margin: 0;
 }
 
@@ -255,10 +257,13 @@ header {
 }
 
 .book-item {
-  flex: 1 1 calc(25% - 10px); /* 4 columns on larger screens with reduced gap */
+  flex: 1 1 calc(25% - 10px);
+  /* 4 columns on larger screens with reduced gap */
   text-align: center;
-  margin: 5px 0; /* Reduced margin */
+  margin: 5px 0;
+  /* Reduced margin */
 }
+
 .book-item img {
   width: 150px;
   height: 220px;
@@ -311,28 +316,43 @@ header {
 
 #sort-dropdown {
   position: absolute;
-  top: 100%; /* Ensures the dropdown appears right below the button */
-  left: 0; /* Aligns the dropdown with the left side of the button */
-  background-color: #fff; /* Sets a white background for the dropdown */
+  top: 100%;
+  /* Ensures the dropdown appears right below the button */
+  left: 0;
+  /* Aligns the dropdown with the left side of the button */
+  background-color: #fff;
+  /* Sets a white background for the dropdown */
 
-  border: 1px solid #ccc; /* Adds a light border for visibility */
-  display: none; /* Hidden by default, shown when the button is clicked */
-  width: 100px; /* Ensures the dropdown has a fixed width */
-  padding: 10px; /* Adds padding inside the dropdown for spacing */
-  appearance: none; /* Remove the default styling */
-  -webkit-appearance: none; /* For Safari */
-  -moz-appearance: none; /* For Firefox */
+  border: 1px solid #ccc;
+  /* Adds a light border for visibility */
+  display: none;
+  /* Hidden by default, shown when the button is clicked */
+  width: 100px;
+  /* Ensures the dropdown has a fixed width */
+  padding: 10px;
+  /* Adds padding inside the dropdown for spacing */
+  appearance: none;
+  /* Remove the default styling */
+  -webkit-appearance: none;
+  /* For Safari */
+  -moz-appearance: none;
+  /* For Firefox */
   cursor: pointer;
 }
+
 #sort-dropdown:focus {
   outline: none;
-  color: #555; /* Custom focus border */
-  background-color: #fff; /* Prevent background color change */
+  color: #555;
+  /* Custom focus border */
+  background-color: #fff;
+  /* Prevent background color change */
 }
 
 #sort-dropdown option:checked {
-  background-color: #555; /* Background color for the selected option */
-  color: #fff; /* Text color for the selected option */
+  background-color: #555;
+  /* Background color for the selected option */
+  color: #fff;
+  /* Text color for the selected option */
 }
 
 /* Sort button */
@@ -353,19 +373,23 @@ header {
   background-color: #555;
   /* Darker background on hover */
 }
+
 /* Custom arrow for the dropdown */
 #sort-dropdown {
   appearance: none;
 
   background-repeat: no-repeat;
   background-position: right 10px top 50%;
-  padding-right: 30px; /* Adjust to make space for the arrow */
+  padding-right: 30px;
+  /* Adjust to make space for the arrow */
 }
 
 /* Hover effect for options */
 #sort-dropdown option:hover {
-  background-color: #ddd; /* Add hover effect on options */
+  background-color: #ddd;
+  /* Add hover effect on options */
 }
+
 .dropdown-item {
   padding: 8px;
   cursor: pointer;
@@ -381,12 +405,18 @@ header {
 }
 
 .book-item p.title {
-  max-width: 150px; /* Set a maximum width for the title */
-  height: 50px; /* Fixed height */
-  overflow: hidden; /* Hide the overflowed text */
-  text-overflow: ellipsis; /* Add ellipsis (...) if text is too long */
-  white-space: nowrap; /* Ensure text remains in a single line */
-  text-align: center; /* Center the text */
+  max-width: 150px;
+  /* Set a maximum width for the title */
+  height: 50px;
+  /* Fixed height */
+  overflow: hidden;
+  /* Hide the overflowed text */
+  text-overflow: ellipsis;
+  /* Add ellipsis (...) if text is too long */
+  white-space: nowrap;
+  /* Ensure text remains in a single line */
+  text-align: center;
+  /* Center the text */
   margin-bottom: 10px;
   display: flex;
   justify-content: center;
@@ -395,18 +425,82 @@ header {
 
 .bestsellers {
   background-color: #f4f4f4;
-  padding: 20px; /* Adjust this value to reduce padding */
-  margin: 0; /* Ensure there's no margin */
+  padding: 20px;
+  /* Adjust this value to reduce padding */
+  margin: 0;
+  /* Ensure there's no margin */
 }
 
 .bestsellers-header {
-  margin: 0; /* Remove any margin around the header */
-  padding: 0; /* Ensure there's no extra padding */
+  margin: 0;
+  /* Remove any margin around the header */
+  padding: 0;
+  /* Ensure there's no extra padding */
 }
 
 .sort-filter {
-  margin-top: 0; /* Remove top margin for the button container */
+  margin-top: 0;
+  /* Remove top margin for the button container */
 }
+
+/* --------------------Fanny----------------------------------------------- */
+/* Genre Button and Dropdown */
+.genre-filter {
+  position: relative;
+}
+
+.genre-btn {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #f8efe4;
+  border: none;
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.genre-btn:hover {
+  background-color: #555;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content.show {
+  display: block;
+  /* Show dropdown when 'show' class is added */
+}
+
+.dropdown-content select {
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+}
+
+.dropdown-content select:focus {
+  outline: none;
+  color: #555;
+  background-color: #fff;
+}
+
+.dropdown-content option:hover {
+  background-color: #ddd;
+}
+
+.dropdown-content option:checked {
+  background-color: #555;
+  color: #fff;
+}
+
 /* ---------------------------------------------------------------------- */
 /* Small devices (Mobile phones) -----------------------------------------*/
 @media (max-width: 600px) {
@@ -445,8 +539,10 @@ header {
   }
 
   .book-item {
-    flex: 1 1 calc(50% - 20px); /* 2 columns on small screens (600px and below) */
-    margin: 0; /* Adjust margin to prevent overflow */
+    flex: 1 1 calc(50% - 20px);
+    /* 2 columns on small screens (600px and below) */
+    margin: 0;
+    /* Adjust margin to prevent overflow */
   }
 }
 
@@ -466,6 +562,7 @@ header {
     height: 220px;
   }
 }
+
 .book-list {
   display: flex;
   flex-wrap: wrap;
@@ -474,70 +571,89 @@ header {
 }
 
 .book-item {
-  flex: 1 1 calc(16.66% - 20px); /* 6 columns on larger screens */
+  flex: 1 1 calc(16.66% - 20px);
+  /* 6 columns on larger screens */
   text-align: center;
   margin: 0;
 }
+
 /* Medium devices (Tablets, iPads) */
 @media (max-width: 1024px) {
   .book-item {
-    flex: 1 1 calc(25% - 20px); /* 4 columns on tablets */
+    flex: 1 1 calc(25% - 20px);
+    /* 4 columns on tablets */
   }
 }
 
 /* 1 column for screens smaller than or equal to 400px */
 @media (max-width: 400px) {
   .divider {
-    display: none; /* Hides the element */
+    display: none;
+    /* Hides the element */
   }
+
   .book-item {
-    flex: 1 1 100%; /* 1 column on very small screens (400px and below) */
+    flex: 1 1 100%;
+    /* 1 column on very small screens (400px and below) */
   }
 }
 
 /* ------------------------------------------------------------ */
 @media (max-width: 740px) {
   .divider {
-    display: none; /* Hides the element */
+    display: none;
+    /* Hides the element */
   }
+
   .navbar {
     flex-direction: column;
-    align-items: flex-start; /* Align logo and menu items to the left */
-    padding-left: 0; /* Remove excessive padding */
+    align-items: flex-start;
+    /* Align logo and menu items to the left */
+    padding-left: 0;
+    /* Remove excessive padding */
   }
 
   .navbar ul {
-    flex-direction: column; /* Stack the navigation links vertically */
-    gap: 10px; /* Reduce the gap */
-    margin-top: 20px; /* Add space below the logo */
+    flex-direction: column;
+    /* Stack the navigation links vertically */
+    gap: 10px;
+    /* Reduce the gap */
+    margin-top: 20px;
+    /* Add space below the logo */
   }
 
   .logo {
-    margin-bottom: 10px; /* Space between logo and wishlist/search */
+    margin-bottom: 10px;
+    /* Space between logo and wishlist/search */
   }
 
   /* Search and sign-in button alignment */
   .search-signin {
     flex-direction: column;
-    align-items: flex-start; /* Align search bar and sign-in vertically */
+    align-items: flex-start;
+    /* Align search bar and sign-in vertically */
     margin-top: 10px;
   }
 
   .search-box {
-    width: 100%; /* Full width for the search input */
+    width: 100%;
+    /* Full width for the search input */
   }
 
   .search-box input {
-    width: 80%; /* Adjust input field width for smaller screens */
+    width: 80%;
+    /* Adjust input field width for smaller screens */
   }
 
   .search-button {
-    width: 100%; /* Full width for search button */
+    width: 100%;
+    /* Full width for search button */
     margin-top: 10px;
   }
 
   .hero {
-    padding: 20px; /* Reduce padding */
+    padding: 20px;
+    /* Reduce padding */
   }
 
   .hero-content {
@@ -551,11 +667,13 @@ header {
   }
 
   .text-content h2 {
-    font-size: 2em; /* Smaller font for heading */
+    font-size: 2em;
+    /* Smaller font for heading */
   }
 
   .text-content p {
-    font-size: 1em; /* Adjust paragraph font size */
+    font-size: 1em;
+    /* Adjust paragraph font size */
   }
 
   .book-slider .book img {
@@ -581,9 +699,11 @@ header {
   }
 
   .book-item {
-    flex: 1 1 calc(50% - 20px); /* 2 columns on small screens */
+    flex: 1 1 calc(50% - 20px);
+    /* 2 columns on small screens */
   }
 }
+
 @media (max-width: 400px) {
   .hero-content {
     flex-direction: column;
@@ -591,72 +711,93 @@ header {
   }
 
   .text-content h2 {
-    font-size: 1.8em; /* Further reduce font size */
+    font-size: 1.8em;
+    /* Further reduce font size */
   }
 
   .book-item img {
     width: 80px;
-    height: 120px; /* Smaller book images */
+    height: 120px;
+    /* Smaller book images */
   }
 
   .book-item {
-    flex: 1 1 100%; /* 1 column on very small screens */
+    flex: 1 1 100%;
+    /* 1 column on very small screens */
   }
+
   .sort-filter {
     display: flex;
-    flex-direction: column; /* Stack buttons in a column * /
+    flex-direction: column;
+    /* Stack buttons in a column * /
     justify-content: center; /* Center them horizontally */
     gap: 1px;
     padding: 0;
-    margin: 0; /* Add space above the buttons */
+    margin: 0;
+    /* Add space above the buttons */
   }
 
   .sort-filter button {
-    width: auto; /* Auto width for the buttons */
+    width: auto;
+    /* Auto width for the buttons */
     padding: 10px 20px;
   }
 
   .bestsellers-header {
-    text-align: center; /* Center align the "Bestsellers" heading */
-    padding-top: 20px; /* Add space above the heading if necessary */
+    text-align: center;
+    /* Center align the "Bestsellers" heading */
+    padding-top: 20px;
+    /* Add space above the heading if necessary */
   }
 
   .bestsellers {
-    text-align: center; /* Center align the content in the section */
+    text-align: center;
+    /* Center align the content in the section */
   }
 }
+
 /* -------------------------------------------------- */
 /* Medium-small screens (600px to 868px) */
 @media (min-width: 600px) and (max-width: 970px) {
+
   .divider,
   .search-box {
-    display: none; /* Hide the divider and search-box */
+    display: none;
+    /* Hide the divider and search-box */
   }
 
   .sort-filter {
     display: flex;
-    flex-direction: row; /* Keep them side by side */
-    justify-content: center; /* Center horizontally */
+    flex-direction: row;
+    /* Keep them side by side */
+    justify-content: center;
+    /* Center horizontally */
     gap: 10px;
     margin-bottom: 20px;
-    margin-top: 20px; /* Add some space above */
+    margin-top: 20px;
+    /* Add some space above */
   }
 
   .bestsellers-header {
-    flex-direction: column; /* Stack the buttons and heading vertically */
+    flex-direction: column;
+    /* Stack the buttons and heading vertically */
     align-items: center;
   }
 }
+
 /* ---------------------------------------------------------- */
 @media (max-width: 950px) and (min-width: 678px) {
   .hero-content {
-    flex-direction: column; /* Stack the heading and images vertically */
+    flex-direction: column;
+    /* Stack the heading and images vertically */
     align-items: center;
   }
 
   .text-content {
-    text-align: center; /* Center the heading text */
-    margin-bottom: 20px; /* Add spacing below the heading */
+    text-align: center;
+    /* Center the heading text */
+    margin-bottom: 20px;
+    /* Add spacing below the heading */
   }
 }
 
@@ -666,16 +807,20 @@ header {
 @media (max-width: 600px) and (min-width: 535px) {
   .sort-filter {
     display: flex;
-    flex-direction: row; /* Keep buttons in a row */
-    justify-content: center; /* Center them horizontally */
-    gap: 10px; /* Adjust the gap between buttons */
+    flex-direction: row;
+    /* Keep buttons in a row */
+    justify-content: center;
+    /* Center them horizontally */
+    gap: 10px;
+    /* Adjust the gap between buttons */
     margin-bottom: 20px;
     margin-top: 10px;
   }
 
   .sort-filter button {
     padding: 10px 20px;
-    font-size: 13px; /* Adjust font size for small screens */
+    font-size: 13px;
+    /* Adjust font size for small screens */
   }
 }
 
@@ -683,84 +828,110 @@ header {
 /* One column layout with larger images for screens 535px and below */
 @media (max-width: 535px) {
   .book-item {
-    flex: 1 1 100%; /* Display images in one column */
+    flex: 1 1 100%;
+    /* Display images in one column */
     margin: 0;
   }
 
   .book-item img {
-    width: 100%; /* Set image width to 100% of its container */
-    height: auto; /* Allow height to adjust automatically */
-    max-width: 300px; /* Optionally, set a maximum width for the images */
-    object-fit: cover; /* Ensure the images cover their containers */
+    width: 100%;
+    /* Set image width to 100% of its container */
+    height: auto;
+    /* Allow height to adjust automatically */
+    max-width: 300px;
+    /* Optionally, set a maximum width for the images */
+    object-fit: cover;
+    /* Ensure the images cover their containers */
   }
 
   .sort-filter {
-    flex-direction: column; /* Stack buttons vertically */
+    flex-direction: column;
+    /* Stack buttons vertically */
     gap: 10px;
   }
 
   .sort-filter button {
-    width: 100%; /* Make buttons full width */
-    padding: 10px 20px; /* Adjust padding */
+    width: 100%;
+    /* Make buttons full width */
+    padding: 10px 20px;
+    /* Adjust padding */
   }
 }
+
 /* ----------------------------------------- */
 /* Hide book images in the hero section for screens between 320px and 410px */
 @media (max-width: 410px) and (min-width: 320px) {
   .hero-content .book-slider {
-    display: none; /* Hide the book images */
+    display: none;
+    /* Hide the book images */
   }
 
   .hero-content {
-    flex-direction: column; /* Stack the remaining content vertically */
+    flex-direction: column;
+    /* Stack the remaining content vertically */
     align-items: center;
-    padding: 20px; /* Adjust padding for the hero section */
+    padding: 20px;
+    /* Adjust padding for the hero section */
   }
 
   .text-content {
-    max-width: 100%; /* Ensure the text takes full width */
-    text-align: center; /* Center-align the text */
+    max-width: 100%;
+    /* Ensure the text takes full width */
+    text-align: center;
+    /* Center-align the text */
   }
 
   .text-content h2 {
-    font-size: 2em; /* Adjust heading size for smaller screens */
-    margin-bottom: 10px; /* Add some spacing */
+    font-size: 2em;
+    /* Adjust heading size for smaller screens */
+    margin-bottom: 10px;
+    /* Add some spacing */
   }
 
   .text-content p {
-    font-size: 1em; /* Adjust paragraph font size */
+    font-size: 1em;
+    /* Adjust paragraph font size */
     margin-bottom: 10px;
   }
 
   .text-content button {
-    padding: 10px 20px; /* Adjust button padding */
+    padding: 10px 20px;
+    /* Adjust button padding */
     font-size: 1em;
   }
 }
+
 /* -------------------------------- */
 /* Hide Sort and Genre buttons for screens 535px and below */
 @media (max-width: 740px) {
   .sort-filter {
-    display: none; /* Hides the Sort and Genre buttons */
+    display: none;
+    /* Hides the Sort and Genre buttons */
   }
 }
+
 /* ------------------------------------ */
 /* Medium screens: 740px to 600px */
 @media (max-width: 740px) and (min-width: 600px) {
   .book-list {
     display: flex;
-    flex-wrap: wrap; /* Ensure items can wrap to the next line */
-    justify-content: space-between; /* Distribute space evenly */
+    flex-wrap: wrap;
+    /* Ensure items can wrap to the next line */
+    justify-content: space-between;
+    /* Distribute space evenly */
   }
 
   .book-item {
-    flex: 1 1 calc(33.33% - 20px); /* 3 columns with space between */
-    margin: 10px 0; /* Optional: Add margin for spacing */
+    flex: 1 1 calc(33.33% - 20px);
+    /* 3 columns with space between */
+    margin: 10px 0;
+    /* Optional: Add margin for spacing */
   }
 }
 
 @media screen and (max-width: 500px) {
   nav {
-    display: none; /* This hides the navigation bar */
+    display: none;
+    /* This hides the navigation bar */
   }
 }

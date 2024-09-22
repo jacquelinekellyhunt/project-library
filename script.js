@@ -1,4 +1,3 @@
-//Fanny: changes the genre to match the Genre: drop-down menu 
 const books = [
   {
     title: "Journeying with Faith",
@@ -183,15 +182,14 @@ const books = [
   },
 ];
 
-//---------------------------------------------------------------------------------
 // Function to display books in the HTML
-
-//Fanny: added genre in the function displayBooks 
-
-function displayBooks(books) {
+// Takes an array of book objects and displays them in the #book-list element
+const displayBooks = (books) => {
   const bookList = document.getElementById("book-list");
   bookList.innerHTML = ""; // Clear existing content
+  // Iterate through each book object in the books array
   books.forEach((book) => {
+    // Create an HTML template for each book and add it to the bookList
     const bookItem = `
       <div class="book-item">
         <img src="${book.image}" alt="${book.title}" />
@@ -199,25 +197,31 @@ function displayBooks(books) {
         <p>${book.year}</p>
         <p>${book.genre}</p>
         <p>Rating: ${book.rating}</p>
-        
       </div>
     `;
+    // Append the book item to the bookList
     bookList.innerHTML += bookItem;
   });
-}
-
+};
+// Function to sort books based on the selected sort option
+// Takes a sort option string and sorts the books array accordingly
 const sortBooks = (sortOption) => {
   let sortedBooks = [...books]; // Create a copy of the books array
-
+  // Sort books alphabetically by title (A-Z)
   if (sortOption === "titleAZ") {
     sortedBooks.sort((a, b) => a.title.localeCompare(b.title));
+    // Sort books alphabetically by title (Z-A)
   } else if (sortOption === "titleZA") {
     sortedBooks.sort((a, b) => b.title.localeCompare(a.title));
+    // Sort books by publication year (Newest to Oldest)
   } else if (sortOption === "yearNewest") {
     sortedBooks.sort((a, b) => b.year - a.year);
+    // Sort books by publication year (Oldest to Newest)
   } else if (sortOption === "yearOldest") {
+    // Sort books by rating (Highest to Lowest)
     sortedBooks.sort((a, b) => a.year - b.year);
   } else if (sortOption === "ratingHighest") {
+    // Sort books by rating (Lowest to Highest)
     sortedBooks.sort((a, b) => b.rating - a.rating);
   } else if (sortOption === "ratingLowest") {
     sortedBooks.sort((a, b) => a.rating - b.rating);
@@ -256,36 +260,35 @@ document.addEventListener("DOMContentLoaded", () => {
   displayBooks(books);
 });
 
-//Fanny-------------------------------------------------------------------------
 // Function to filter books by genre
 const filterBooks = () => {
   const selectedGenre = genreDropdown.value;
 
   // Filter the books based on the selected genre
-  const filteredList = books.filter((book) => book.genre.toLowerCase() === selectedGenre.toLowerCase());
+  const filteredList = books.filter(
+    (book) => book.genre.toLowerCase() === selectedGenre.toLowerCase()
+  );
 
   // Display the filtered list
   displayBooks(filteredList);
 
   //Hides dropdown after a genre has been selected
-  dropdownMenu.classList.remove('show');
+  dropdownMenu.classList.remove("show");
 };
 
-const genreButton = document.getElementById('genre-button');
-const dropdownMenu = document.getElementById('dropdown-menu');
-const genreDropdown = document.getElementById('filter-dropdown');
+const genreButton = document.getElementById("genre-button");
+const dropdownMenu = document.getElementById("dropdown-menu");
+const genreDropdown = document.getElementById("filter-dropdown");
 
 // Eventlistener for the "Genre" button to toggle the dropdown
-genreButton.addEventListener('click', () => {
-  dropdownMenu.classList.toggle('show');
+genreButton.addEventListener("click", () => {
+  dropdownMenu.classList.toggle("show");
 });
 
 // Eventlistener for the genre dropdown to filter books
-genreDropdown.addEventListener('change', filterBooks);
+genreDropdown.addEventListener("change", filterBooks);
 
 displayBooks(books);
-
-//--------------------------------------------------
 
 // Function to filter books by title based on user input
 function searchBooksByTitle(searchTerm) {
@@ -324,22 +327,3 @@ document.querySelector(".search-button").addEventListener("click", () => {
   const searchInput = document.querySelector(".search-box input").value;
   searchBooksByTitle(searchInput);
 });
-
-//Fanny: i think this is reduntant code, commented it out: 
-
-// Function to display books in the HTML
-// function displayBooks(books) {
-//   const bookList = document.getElementById("book-list");
-//   bookList.innerHTML = ""; // Clear existing content
-//   books.forEach((book) => {
-//     const bookItem = `
-//       <div class="book-item">
-//         <img src="${book.image}" alt="${book.title}" />
-//         <p>${book.title}<br /><small>${book.author}</small></p>
-//         <p>${book.year}</p>
-//         <p>Rating: ${book.rating}</p>
-//       </div>
-//     `;
-//     bookList.innerHTML += bookItem;
-//   });
-// }

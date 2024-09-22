@@ -286,7 +286,6 @@ header {
   /* Darker background on hover */
 }
 
-/* ----------------------------------------------------- */
 .dropdown-button {
   position: relative;
   /* Ensures that dropdown menu is positioned relative to this button */
@@ -443,7 +442,6 @@ header {
   /* Remove top margin for the button container */
 }
 
-/* --------------------Fanny----------------------------------------------- */
 /* Genre Button and Dropdown */
 .genre-filter {
   position: relative;

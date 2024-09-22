@@ -4,9 +4,9 @@ On.Book is a dynamic website that displays and interacts with a curated array of
 
 # Technologies Used:
 
-HTML: Structure the content.
-CSS: Style the interface.
-JavaScript: Implement dynamic functionality like filtering, sorting, and random selection of items.
+- HTML: Structure the content.
+- CSS: Style the interface.
+- JavaScript: Implement dynamic functionality like filtering, sorting, and random selection of items.
 
 # View it live
 

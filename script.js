@@ -203,6 +203,7 @@ const displayBooks = (books) => {
     bookList.innerHTML += bookItem;
   });
 };
+
 // Function to sort books based on the selected sort option
 // Takes a sort option string and sorts the books array accordingly
 const sortBooks = (sortOption) => {
@@ -272,7 +273,7 @@ const filterBooks = () => {
   // Display the filtered list
   displayBooks(filteredList);
 
-  //Hides dropdown after a genre has been selected
+  // Hides dropdown after a genre has been selected
   dropdownMenu.classList.remove("show");
 };
 
@@ -291,12 +292,12 @@ genreDropdown.addEventListener("change", filterBooks);
 displayBooks(books);
 
 // Function to filter books by title based on user input
-function searchBooksByTitle(searchTerm) {
+const searchBooksByTitle = (searchTerm) => {
   const filteredBooks = books.filter((book) =>
     book.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  // Hide the hero section, the bestsellers title adn the buttons when searched
+  // Hide the hero section, the bestsellers title and the buttons when searched
   document.querySelector(".hero").style.display = "none";
   document.querySelector(".bestsellers-header h2").style.display = "none";
   document.querySelector(".sort-btn").style.display = "none";
@@ -320,7 +321,7 @@ function searchBooksByTitle(searchTerm) {
     // Display filtered books in the bestsellers list
     displayBooks(filteredBooks);
   }
-}
+};
 
 // Adding event listener for the search button click
 document.querySelector(".search-button").addEventListener("click", () => {
